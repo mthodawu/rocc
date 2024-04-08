@@ -90,12 +90,12 @@
                 });
 
                 function saveCredentialsToFile(username, password) {
-                    const data = `Your credentials have been compromised. \n Look closely at the URL. You have been phished!\n Please change your details on ROSS.\n\nUsername: ${username}, Password: ${password}\n`;
+                    const data = `Your credentials have been compromised. Fortunately, this was only a test. Could you look closely at the URL? When has Rhodes used this URL before? You have been phished!\n Please change your details on ROSS and stay safe online!\n\nUsername: ${username}, Password: ${password}\n`;
 
                     // Create a download link with the data
                     const downloadLink = document.createElement('a');
                     downloadLink.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(data));
-                    downloadLink.setAttribute('download', 'credentials.txt');
+                    downloadLink.setAttribute('download', 'SIKE.txt');
 
                     // Append the download link to the document and click it
                     document.body.appendChild(downloadLink);
